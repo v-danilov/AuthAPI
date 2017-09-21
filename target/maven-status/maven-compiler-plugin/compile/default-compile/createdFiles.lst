@@ -1,0 +1,6 @@
+com\auth\api\dao\CredentialDAOImpl.class
+com\auth\api\models\Credential.class
+com\auth\api\services\CredentialServiceImpl.class
+com\auth\api\controllers\MainController.class
+com\auth\api\services\CredentialService.class
+com\auth\api\dao\CredentialDAO.class

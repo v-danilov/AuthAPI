@@ -12,10 +12,11 @@
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
         <property name="url"
-                  value="jdbc:mysql://localhost:3306/authdb"/>
-        <property name="username" value="root"/>
-        <property name="password" value="root"/>
+                  value="jdbc:mysql://eu-cdbr-west-01.cleardb.com:3306/heroku_9b02be3e4e853d8?reconnect=true"/>
+        <property name="username" value="be82a6983ec40f"/>
+        <property name="password" value="7a098138"/>
     </bean>
+
 
     <!-- Hibernate 4 SessionFactory Bean definition -->
     <bean id="hibernate4AnnotatedSessionFactory"

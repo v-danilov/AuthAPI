@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="authdb@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="authdb">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="bookmanager"/>
+    <schema id="4" parent="1" name="booksmanager"/>
+    <schema id="5" parent="1" name="dbo"/>
+    <schema id="6" parent="1" name="information_schema"/>
+    <schema id="7" parent="1" name="mydb"/>
+    <schema id="8" parent="1" name="mysql"/>
+    <schema id="9" parent="1" name="navigation"/>
+    <schema id="10" parent="1" name="performance_schema"/>
+    <schema id="11" parent="1" name="sys"/>
+    <schema id="12" parent="1" name="treedb"/>
+    <table id="13" parent="2" name="credential"/>
+    <column id="14" parent="13" name="idcredential">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="15" parent="13" name="login">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="16" parent="13" name="password">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="17" parent="13" name="idcredential_UNIQUE">
+      <ColNames>idcredential</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="18" parent="13" name="login_UNIQUE">
+      <ColNames>login</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="19" parent="13" name="PRIMARY">
+      <ColNames>idcredential</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="20" parent="13" name="idcredential_UNIQUE">
+      <ColNames>idcredential</ColNames>
+      <UnderlyingIndexName>idcredential_UNIQUE</UnderlyingIndexName>
+    </key>
+    <key id="21" parent="13" name="login_UNIQUE">
+      <ColNames>login</ColNames>
+      <UnderlyingIndexName>login_UNIQUE</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>

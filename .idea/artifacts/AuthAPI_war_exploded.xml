@@ -1,12 +1,14 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="AuthAPI:war exploded">
-    <output-path>$PROJECT_DIR$/target/AuthAPI-1.0-SNAPSHOT</output-path>
+    <output-path>$PROJECT_DIR$/out/artifacts/AuthAPI_war_exploded</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="AuthAPI" />
         </element>
         <element id="directory" name="lib">
+          <element id="library" level="project" name="Spring-4.3.10.RELEASE" />
+          <element id="library" level="project" name="Spring MVC-4.3.10.RELEASE" />
           <element id="library" level="project" name="Maven: commons-dbcp:commons-dbcp:1.4" />
           <element id="library" level="project" name="Maven: commons-pool:commons-pool:1.5.4" />
           <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.22" />
@@ -45,9 +47,6 @@
           <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.1" />
           <element id="library" level="project" name="Maven: com.heroku.sdk:heroku-jdbc:0.1.1" />
         </element>
-      </element>
-      <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/AuthAPI-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="AuthAPI/web/Web" />
     </root>

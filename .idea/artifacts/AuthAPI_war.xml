@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="AuthAPI:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/AuthAPI_war</output-path>
+    <root id="archive" name="AuthAPI_war.war">
+      <element id="artifact" artifact-name="AuthAPI:war exploded" />
+    </root>
+  </artifact>
+</component>

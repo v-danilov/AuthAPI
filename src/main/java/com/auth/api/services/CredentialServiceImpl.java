@@ -24,11 +24,14 @@ public class CredentialServiceImpl implements CredentialService {
 
         if(isUniqCred(credential.getLogn())){
             if(checkLoginFormat(credential.getLogn())) {
-                credentialDAO.addCredential(credential);
-                JSONObject resopnse_json = new JSONObject();
-                resopnse_json.put("type", "success");
-                resopnse_json.put("username", credential.getLogn());
-                return resopnse_json;
+                if (credential.getLogn().length() <= 45) {
+                    credentialDAO.addCredential(credential);
+                    JSONObject resopnse_json = new JSONObject();
+                    resopnse_json.put("type", "success");
+                    resopnse_json.put("username", credential.getLogn());
+                    return resopnse_json;
+                }
+                return generateError("To long login name");
 
             }
             return generateError("Wrong login format.");
